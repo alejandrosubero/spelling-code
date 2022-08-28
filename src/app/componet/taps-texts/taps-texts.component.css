@@ -1,0 +1,26 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .lg-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  .lg-box-1 {
+    height: 100%;
+    width: 100%;
+  }
+  .ventana{
+    height: 100%;
+    width: 100%;
+  }

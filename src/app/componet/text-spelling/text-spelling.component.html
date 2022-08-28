@@ -1,0 +1,75 @@
+<div class="continer" style="width: 90%;">
+    <div class="row caja-2 mt-1">
+        <label for="add" class="mt-1 mb-2">Add the Words</label>
+        <div class="col-9 mb-2">
+            <input type="text" id="add" class="totalW" [(ngModel)]="word" (keyup.enter)="addWord()">
+        </div>
+        <div class="col-3 mb-2">
+            <button class="totalW" (click)="addWord()">Add</button>
+        </div>
+    </div>
+
+    <div class="row caja-2 mt-3" *ngIf="this.existWordsInList">
+        <div class="">
+            <label for="add" class="mt-1 mb-2">Listen and Learn the Words</label> 
+        </div>
+       
+        <div class="col-4 mb-2 mt-2 text-center">
+            <label for="" class="h4 borderInput" >{{this.wordx}}</label>
+        </div>
+        <div class="col-1 mb-2 mt-2 text-center">
+                <mat-icon (click)="deleteWordOfList()" 
+                    style="cursor: pointer; color: rgb(202, 5, 5);">
+                    delete_forever
+                </mat-icon>
+        </div>
+        
+        <div class="col-4 mb-2 mt-2">
+            <div class="row borderButton">
+                <div class="col-6">
+                    <button class="shadow-lg" (click)="backWork()">Back</button>
+                </div>
+                <div class="col-6">
+                    <button class="shadow-lg" (click)="nexWord()">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 mb-2 mt-2">
+            <button class="shadow-lg" (click)="speech()">Speech</button>
+        </div>
+    </div>
+
+    <div class="row caja-2 mt-3" *ngIf="this.existWordsInList">
+        <label for="add" class="mt-1 mb-2">Spelled Word</label>
+        <div class="col-9 mb-2">
+            <div class="row text-center">
+                <label class="col h4 borderInput2 m-1" *ngFor="let chart of this.spellWordList" (click)="spellItem(chart)">
+                    {{chart}}
+                </label>
+            </div>
+           
+        </div>
+        <div class="col-3 mb-2">
+            <button class="totalW" (click)="spell()">speech</button>
+        </div>
+    </div>
+
+    <div class="row caja-2 mt-3" *ngIf="this.existWordsInList">
+        <label for="add" class="mt-1 mb-2">Word Review or Drill</label>
+        <div class="col-9 mb-2">
+            <div class="row text-center">
+                <label class="col h4 borderInput m-1" *ngFor="let drillWords of this.wordsList"> 
+                    {{drillWords}}
+                </label>
+            </div>
+           
+        </div>
+        <div class="col-3 mb-2">
+            <button class="totalW" (click)="drill()">Drill</button>
+        </div>
+    </div>
+    
+
+
+</div>

@@ -1,0 +1,45 @@
+.caja-1{
+    border-radius: 17px;
+    background: #e0e0e0;
+    box-shadow:  5px -5px 12px #b1b1b1, -5px 5px 12px #ffffff;
+}
+
+.caja-2{
+    border-radius: 0px;
+    background: linear-gradient(315deg, #d4d4d4, #fbfbfb);
+    box-shadow:  -9px -9px 16px #d5d4d4, 9px 9px 16px #ffffff;
+}
+
+.caja-3{ 
+    border-radius: 0px;
+    background: linear-gradient(225deg, #f2f2f2, #fbfbfb);
+    box-shadow:  -9px 9px 16px #f5f5f5, 9px -9px 16px #ffffff;
+}
+.totalW{
+    width: 100%;
+}
+
+.align{
+    align-content: center;
+}
+
+.borderInput{
+    width: 100%;
+    border: 1px solid black;
+    color: rgb(8, 8, 8);
+    background-color: white;
+}
+
+.borderButton{
+    width: 100%;
+    /* border: 1px solid black; */
+    /* color: rgb(8, 8, 8);
+    background-color: white; */
+}
+
+.borderInput2{
+    padding: 3px;
+    border: 1px solid black;
+    color: rgb(8, 8, 8);
+    background-color: white;
+}
